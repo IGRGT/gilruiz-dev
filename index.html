@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gilberto Ruiz</title>
+  <meta name="description" content="Builder + developer. Texas Tech alum. MS Informatics @ UTRGV starting Aug 2026." />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>" />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --fg: #c9d1d9;
+      --fg-dim: #8b949e;
+      --fg-strong: #f0f6fc;
+      --accent: #58a6ff;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2rem;
+    }
+    header {
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+      color: var(--fg-strong);
+      font-weight: 600;
+    }
+    .bio {
+      color: var(--fg-dim);
+      margin: 0;
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--fg-dim);
+      font-weight: 600;
+      margin: 0 0 1rem;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project {
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .project:last-child { border-bottom: 1px solid var(--border); }
+    .project-title {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .project-title a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .project-title a:hover { text-decoration: underline; }
+    .project-tag {
+      font-size: 0.7rem;
+      color: var(--fg-dim);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .project-desc {
+      color: var(--fg-dim);
+      font-size: 0.95rem;
+      margin: 0.4rem 0 0.5rem;
+    }
+    .project-meta {
+      font-size: 0.85rem;
+      color: var(--fg-dim);
+      margin: 0;
+    }
+    .project-meta a {
+      color: var(--fg-dim);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+    }
+    .project-meta a:hover {
+      color: var(--fg);
+      text-decoration-color: var(--fg-dim);
+    }
+    .project-meta span + span::before {
+      content: "·";
+      margin: 0 0.5rem;
+      color: var(--border);
+    }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--fg-dim);
+      font-size: 0.85rem;
+    }
+    .signature {
+      margin: 0 0 0.75rem;
+    }
+    .links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+    .links a {
+      color: var(--fg-dim);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+    }
+    .links a:hover {
+      color: var(--fg);
+      text-decoration-color: var(--fg-dim);
+    }
+    @media (max-width: 480px) {
+      main { padding: 3rem 1.25rem 2rem; }
+      h1 { font-size: 1.625rem; }
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --fg: #24292f;
+        --fg-dim: #57606a;
+        --fg-strong: #1f2328;
+        --accent: #0969da;
+        --border: #d0d7de;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Builder + developer.</h1>
+      <p class="bio">Texas Tech alum. MS Informatics @ UTRGV starting Aug 2026. Open to freelance.</p>
+    </header>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="project-list">
+
+        <li class="project">
+          <div class="project-title">
+            <a href="https://drill.gilruiz.dev">DrillForge</a>
+            <span class="project-tag">live</span>
+          </div>
+          <p class="project-desc">CompTIA A+ V15 practice simulator covering both Core 1 (220-1201) and Core 2 (220-1202). ~200 scenarios across all 9 domains, 4 question types, score tracking with spaced-repetition weighting.</p>
+          <p class="project-meta">
+            <span><a href="https://drill.gilruiz.dev">demo</a></span>
+            <span><a href="https://github.com/IGRGT/drillforge">source</a></span>
+          </p>
+        </li>
+
+        <li class="project">
+          <div class="project-title">
+            <a href="https://github.com/IGRGT/decay-graph-crm">Decay-CRM</a>
+          </div>
+          <p class="project-desc">Local-first CRM that tracks which contacts have gone stale. Python + SQLite, no external dependencies.</p>
+          <p class="project-meta">
+            <span><a href="https://github.com/IGRGT/decay-graph-crm">source</a></span>
+          </p>
+        </li>
+
+        <li class="project">
+          <div class="project-title">
+            <a href="https://github.com/IGRGT/crm-workflow-documentation">CRM Workflow Documentation</a>
+          </div>
+          <p class="project-desc">Process documentation distilled from hands-on dealership operations experience with CDK Global. Domain-knowledge artifact bridging operations into product thinking.</p>
+          <p class="project-meta">
+            <span><a href="https://github.com/IGRGT/crm-workflow-documentation">source</a></span>
+          </p>
+        </li>
+
+        <li class="project">
+          <div class="project-title">
+            <a href="https://github.com/IGRGT/logos">Logos</a>
+          </div>
+          <p class="project-desc">Markdown template set for personal AI assistants. Lightweight, file-based, easy to fork and customize.</p>
+          <p class="project-meta">
+            <span><a href="https://github.com/IGRGT/logos">source</a></span>
+          </p>
+        </li>
+
+      </ul>
+    </section>
+
+    <footer>
+      <p class="signature">Created by Gilberto Ruiz · 2026</p>
+      <p class="links">
+        <a href="https://github.com/IGRGT">GitHub</a>
+        <a href="https://www.linkedin.com/in/gilberto-r-475067355/">LinkedIn</a>
+        <a href="mailto:hi@gilruiz.dev">hi@gilruiz.dev</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
