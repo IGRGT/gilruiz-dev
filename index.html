@@ -107,6 +107,31 @@
       margin: 0 0.5rem;
       color: var(--border);
     }
+    .now {
+      margin-bottom: 3rem;
+    }
+    .now-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: var(--fg-dim);
+      font-size: 0.95rem;
+    }
+    .now-list li {
+      padding: 0.35rem 0;
+    }
+    .project-stats {
+      font-size: 0.8rem;
+      color: var(--fg-dim);
+      margin: 0.4rem 0 0.5rem;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      letter-spacing: 0.03em;
+    }
+    .project-stats span + span::before {
+      content: "·";
+      margin: 0 0.5rem;
+      color: var(--border);
+    }
     footer {
       margin-top: 4rem;
       padding-top: 1.5rem;
@@ -132,9 +157,57 @@
       color: var(--fg);
       text-decoration-color: var(--fg-dim);
     }
+    .operator-strip {
+      margin: 1.5rem 0 0;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      position: relative;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--fg-dim);
+    }
+    .operator-strip::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02) 0,
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      pointer-events: none;
+    }
+    .operator-track {
+      display: inline-flex;
+      gap: 2.5rem;
+      white-space: nowrap;
+      animation: operator-drift 45s linear infinite;
+    }
+    .operator-strip .label {
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+    .operator-strip .sep {
+      color: var(--border);
+    }
+    @keyframes operator-drift {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .operator-track { animation: none; }
+    }
     @media (max-width: 480px) {
       main { padding: 3rem 1.25rem 2rem; }
       h1 { font-size: 1.625rem; }
+      .operator-strip { font-size: 0.66rem; }
     }
     @media (prefers-color-scheme: light) {
       :root {
@@ -152,8 +225,41 @@
   <main>
     <header>
       <h1>Builder + developer.</h1>
-      <p class="bio">Texas Tech alum. MS Informatics @ UTRGV starting Aug 2026. Open to freelance.</p>
+      <p class="bio">I build local-first tools shaped by hands-on dealership operations work. Texas Tech alum, MS Informatics @ UTRGV starting Aug 2026. Open to freelance.</p>
+      <div class="operator-strip" aria-label="Operator status">
+        <div class="operator-track">
+          <span><span class="label">Operator</span>Gilberto Ruiz</span>
+          <span class="sep">///</span>
+          <span><span class="label">Status</span>Building in public</span>
+          <span class="sep">///</span>
+          <span><span class="label">Focus</span>Decay-CRM</span>
+          <span class="sep">///</span>
+          <span><span class="label">Last ship</span>DrillForge</span>
+          <span class="sep">///</span>
+          <span><span class="label">Next</span>MS Informatics @ UTRGV</span>
+          <span class="sep">///</span>
+          <span><span class="label">Operator</span>Gilberto Ruiz</span>
+          <span class="sep">///</span>
+          <span><span class="label">Status</span>Building in public</span>
+          <span class="sep">///</span>
+          <span><span class="label">Focus</span>Decay-CRM</span>
+          <span class="sep">///</span>
+          <span><span class="label">Last ship</span>DrillForge</span>
+          <span class="sep">///</span>
+          <span><span class="label">Next</span>MS Informatics @ UTRGV</span>
+          <span class="sep">///</span>
+        </div>
+      </div>
     </header>
+
+    <section aria-labelledby="now-heading" class="now">
+      <h2 id="now-heading">Now · May 2026</h2>
+      <ul class="now-list">
+        <li>Pushing Decay-CRM toward a local-first v0.2.</li>
+        <li>Studying for CompTIA A+ (Core 1 and Core 2).</li>
+        <li>Prepping for MS Informatics at UTRGV, fall 2026.</li>
+      </ul>
+    </section>
 
     <section aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
@@ -165,6 +271,9 @@
             <span class="project-tag">live</span>
           </div>
           <p class="project-desc">CompTIA A+ V15 practice simulator covering both Core 1 (220-1201) and Core 2 (220-1202). ~200 scenarios across all 9 domains, 4 question types, score tracking with spaced-repetition weighting.</p>
+          <p class="project-stats">
+            <span>453 questions</span><span>9 domains</span><span>mastery scoring</span>
+          </p>
           <p class="project-meta">
             <span><a href="https://drillforge.gilruiz.dev">demo</a></span>
             <span><a href="https://github.com/IGRGT/drillforge">source</a></span>
@@ -176,6 +285,9 @@
             <a href="https://github.com/IGRGT/decay-graph-crm">Decay-CRM</a>
           </div>
           <p class="project-desc">Local-first CRM that tracks which contacts have gone stale. Python + SQLite, no external dependencies.</p>
+          <p class="project-stats">
+            <span>Python</span><span>SQLite</span><span>zero deps</span>
+          </p>
           <p class="project-meta">
             <span><a href="https://github.com/IGRGT/decay-graph-crm">source</a></span>
           </p>
@@ -186,6 +298,9 @@
             <a href="https://github.com/IGRGT/crm-workflow-documentation">CRM Workflow Documentation</a>
           </div>
           <p class="project-desc">Process documentation distilled from hands-on dealership operations experience with CDK Global. Domain-knowledge artifact bridging operations into product thinking.</p>
+          <p class="project-stats">
+            <span>ops to product</span><span>field-tested</span>
+          </p>
           <p class="project-meta">
             <span><a href="https://github.com/IGRGT/crm-workflow-documentation">source</a></span>
           </p>
@@ -196,6 +311,9 @@
             <a href="https://github.com/IGRGT/logos">Logos</a>
           </div>
           <p class="project-desc">Markdown template set for personal AI assistants. Lightweight, file-based, easy to fork and customize.</p>
+          <p class="project-stats">
+            <span>markdown only</span><span>forkable</span>
+          </p>
           <p class="project-meta">
             <span><a href="https://github.com/IGRGT/logos">source</a></span>
           </p>
