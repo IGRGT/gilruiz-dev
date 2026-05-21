@@ -1,0 +1,61 @@
+{
+  "exchange_rate_mxn_per_usd": 17.20,
+  "rate_updated": "2026-05-21",
+  "whatsapp_number": "525555555555",
+  "company_email": "ventas@ejemplo-demo.mx",
+  "categories": [
+    "Inyectables",
+    "Conservadores",
+    "Colorantes",
+    "Sazonadores",
+    "Sales Especiales",
+    "Antioxidantes",
+    "Texturizantes",
+    "Materias Primas"
+  ],
+  "items": [
+    { "code": "IN-J", "name": "Inyección Jamón Cocido", "category": "Inyectables", "description": "Mezcla para inyección de jamón cocido tradicional. Mejora rendimiento y textura.", "unit": "kg", "price_mxn": 215.00, "stock": 480, "min_order": 5 },
+    { "code": "IN-P", "name": "Inyección Pavo Premium", "category": "Inyectables", "description": "Mezcla para pechuga de pavo. Retención de humedad superior.", "unit": "kg", "price_mxn": 268.00, "stock": 320, "min_order": 5 },
+    { "code": "IN-R", "name": "Inyección Res Ahumada", "category": "Inyectables", "description": "Para cortes de res estilo ahumado. Perfil de sabor robusto.", "unit": "kg", "price_mxn": 295.00, "stock": 180, "min_order": 5 },
+    { "code": "IN-C", "name": "Inyección Cerdo Curado", "category": "Inyectables", "description": "Para pierna de cerdo curada tradicional.", "unit": "kg", "price_mxn": 245.00, "stock": 410, "min_order": 5 },
+    { "code": "IN-T", "name": "Inyección Tocino Ahumado", "category": "Inyectables", "description": "Mezcla específica para tocino con perfil ahumado.", "unit": "kg", "price_mxn": 310.00, "stock": 220, "min_order": 5 },
+    { "code": "IN-E", "name": "Inyección Económica Multiuso", "category": "Inyectables", "description": "Mezcla básica multipropósito para procesos estándar.", "unit": "kg", "price_mxn": 158.00, "stock": 620, "min_order": 5 },
+
+    { "code": "CO-B", "name": "Conservador Bacteriostático", "category": "Conservadores", "description": "Extiende vida útil en cárnicos refrigerados.", "unit": "kg", "price_mxn": 340.00, "stock": 95, "min_order": 1 },
+    { "code": "CO-A", "name": "Conservador Antioxidante", "category": "Conservadores", "description": "Previene oxidación de grasas. Mantiene color natural.", "unit": "kg", "price_mxn": 410.00, "stock": 110, "min_order": 1 },
+    { "code": "CO-F", "name": "Conservador Antimoho", "category": "Conservadores", "description": "Para embutidos madurados y curados secos.", "unit": "kg", "price_mxn": 385.00, "stock": 75, "min_order": 1 },
+    { "code": "CO-L", "name": "Conservador Líquido Spray", "category": "Conservadores", "description": "Aplicación superficial en cárnicos terminados.", "unit": "L", "price_mxn": 295.00, "stock": 140, "min_order": 5 },
+
+    { "code": "CL-R", "name": "Colorante Rojo Cárnico", "category": "Colorantes", "description": "Tonalidad rojo carmín para embutidos y carnes curadas.", "unit": "kg", "price_mxn": 520.00, "stock": 65, "min_order": 1 },
+    { "code": "CL-A", "name": "Colorante Amarillo Natural", "category": "Colorantes", "description": "Color amarillo dorado para productos avícolas.", "unit": "kg", "price_mxn": 485.00, "stock": 80, "min_order": 1 },
+    { "code": "CL-D", "name": "Colorante Rojo Oscuro", "category": "Colorantes", "description": "Tonalidad burdeo para chorizos y morcillas.", "unit": "kg", "price_mxn": 540.00, "stock": 45, "min_order": 1 },
+    { "code": "CL-N", "name": "Colorante Negro Achiote", "category": "Colorantes", "description": "Pigmento oscuro para adobos estilo yucateco.", "unit": "kg", "price_mxn": 620.00, "stock": 38, "min_order": 1 },
+    { "code": "CL-B", "name": "Colorante Blanqueador", "category": "Colorantes", "description": "Para neutralizar tonos no deseados en productos lácteos cárnicos.", "unit": "kg", "price_mxn": 460.00, "stock": 55, "min_order": 1 },
+
+    { "code": "SZ-C", "name": "Sazonador Chorizo Norteño", "category": "Sazonadores", "description": "Mezcla de especias estilo norte de México. Sin alérgenos comunes.", "unit": "kg", "price_mxn": 185.00, "stock": 240, "min_order": 5 },
+    { "code": "SZ-L", "name": "Sazonador Longaniza", "category": "Sazonadores", "description": "Perfil tradicional para longaniza fresca.", "unit": "kg", "price_mxn": 175.00, "stock": 290, "min_order": 5 },
+    { "code": "SZ-A", "name": "Sazonador Adobo Maya", "category": "Sazonadores", "description": "Mezcla estilo yucateco con achiote.", "unit": "kg", "price_mxn": 220.00, "stock": 150, "min_order": 5 },
+    { "code": "SZ-M", "name": "Sazonador Moronga", "category": "Sazonadores", "description": "Mezcla específica para moronga regional.", "unit": "kg", "price_mxn": 195.00, "stock": 180, "min_order": 5 },
+    { "code": "SZ-G", "name": "Sazonador Chorizo Verde", "category": "Sazonadores", "description": "Estilo Toluca con hierbas verdes deshidratadas.", "unit": "kg", "price_mxn": 235.00, "stock": 95, "min_order": 5 },
+    { "code": "SZ-H", "name": "Sazonador Hamburguesa Premium", "category": "Sazonadores", "description": "Perfil para hamburguesas tipo gourmet.", "unit": "kg", "price_mxn": 250.00, "stock": 130, "min_order": 5 },
+
+    { "code": "SL-C", "name": "Sal Curante Estándar", "category": "Sales Especiales", "description": "Sal de curado para procesos tradicionales.", "unit": "kg", "price_mxn": 95.00, "stock": 1200, "min_order": 25 },
+    { "code": "SL-N", "name": "Sal Nitritada Premium", "category": "Sales Especiales", "description": "Sal de cura premium para embutidos finos.", "unit": "kg", "price_mxn": 140.00, "stock": 800, "min_order": 25 },
+    { "code": "SL-M", "name": "Sal Marina Refinada", "category": "Sales Especiales", "description": "Sal marina de grano fino para aplicaciones premium.", "unit": "kg", "price_mxn": 115.00, "stock": 950, "min_order": 25 },
+    { "code": "SL-A", "name": "Sal Ahumada", "category": "Sales Especiales", "description": "Sal con sabor a humo natural.", "unit": "kg", "price_mxn": 165.00, "stock": 340, "min_order": 10 },
+
+    { "code": "AX-V", "name": "Antioxidante Vegetal", "category": "Antioxidantes", "description": "Origen vegetal, apto para etiquetado limpio.", "unit": "kg", "price_mxn": 580.00, "stock": 60, "min_order": 1 },
+    { "code": "AX-E", "name": "Antioxidante Estándar", "category": "Antioxidantes", "description": "Económico para procesos de mediana exigencia.", "unit": "kg", "price_mxn": 320.00, "stock": 180, "min_order": 1 },
+    { "code": "AX-P", "name": "Antioxidante Premium", "category": "Antioxidantes", "description": "Mayor poder antioxidante para productos de alta rotación.", "unit": "kg", "price_mxn": 720.00, "stock": 40, "min_order": 1 },
+
+    { "code": "TX-A", "name": "Texturizante Aglutinante", "category": "Texturizantes", "description": "Mejora ligado y textura en productos emulsionados.", "unit": "kg", "price_mxn": 275.00, "stock": 220, "min_order": 5 },
+    { "code": "TX-F", "name": "Texturizante Fibra", "category": "Texturizantes", "description": "Aporta cuerpo y reduce pérdidas por cocción.", "unit": "kg", "price_mxn": 195.00, "stock": 340, "min_order": 5 },
+    { "code": "TX-G", "name": "Texturizante Gelificante", "category": "Texturizantes", "description": "Para gelificación de salmueras y caldos.", "unit": "kg", "price_mxn": 410.00, "stock": 90, "min_order": 1 },
+
+    { "code": "MP-G", "name": "Materia Prima Granular Tipo G", "category": "Materias Primas", "description": "Reventa de materia prima granulada de alta pureza.", "unit": "kg", "price_mxn": 78.00, "stock": 2400, "min_order": 50 },
+    { "code": "MP-P", "name": "Materia Prima Polvo Tipo P", "category": "Materias Primas", "description": "Reventa de materia prima en polvo fino.", "unit": "kg", "price_mxn": 92.00, "stock": 1800, "min_order": 50 },
+    { "code": "MP-L", "name": "Materia Prima Líquida Tipo L", "category": "Materias Primas", "description": "Reventa de solución concentrada. Manejo refrigerado.", "unit": "L", "price_mxn": 165.00, "stock": 420, "min_order": 20 },
+    { "code": "MP-F", "name": "Materia Prima Fosfato Industrial", "category": "Materias Primas", "description": "Reventa para clientes con procesos propios.", "unit": "kg", "price_mxn": 105.00, "stock": 1500, "min_order": 50 },
+    { "code": "MP-S", "name": "Materia Prima Sales Mixtas", "category": "Materias Primas", "description": "Mezcla de sales para aplicaciones diversas.", "unit": "kg", "price_mxn": 88.00, "stock": 2100, "min_order": 50 }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Catálogo Demo — Portal Cliente</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="demo-banner-top">
+  DEMO &mdash; Datos ficticios con fines de demostración. No es un sitio de venta real.
+</div>
+
+<header class="topbar">
+  <div class="brand">
+    <h1>Portal de Clientes</h1>
+    <p class="tagline">Aditivos cárnicos y químicos alimentarios &mdash; Demo</p>
+  </div>
+  <div class="controls">
+    <div class="currency-toggle" role="group" aria-label="Moneda">
+      <button id="btn-mxn" class="active" data-cur="MXN">MXN</button>
+      <button id="btn-usd" data-cur="USD">USD</button>
+    </div>
+    <button id="btn-cart" class="cart-button">
+      Carrito <span id="cart-count" class="badge">0</span>
+    </button>
+  </div>
+</header>
+
+<section class="filters">
+  <input type="search" id="search" placeholder="Buscar producto o código...">
+  <select id="category">
+    <option value="">Todas las categorías</option>
+  </select>
+  <p id="rate-note" class="rate-note"></p>
+</section>
+
+<main>
+  <section id="catalog" class="catalog" aria-live="polite"></section>
+</main>
+
+<aside id="cart-panel" class="cart-panel" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Tu Carrito</h2>
+    <button id="cart-close" aria-label="Cerrar">&times;</button>
+  </div>
+  <div id="cart-items" class="cart-items"></div>
+  <div class="cart-summary">
+    <p>Total: <strong id="cart-total">$0.00 MXN</strong></p>
+  </div>
+  <form id="order-form" class="order-form">
+    <h3>Datos del Cliente</h3>
+    <label>Nombre completo <input type="text" name="name" required></label>
+    <label>Empresa <input type="text" name="company"></label>
+    <label>Correo <input type="email" name="email"></label>
+    <label>Teléfono <input type="tel" name="phone"></label>
+    <label>Notas / instrucciones de entrega
+      <textarea name="notes" rows="3"></textarea>
+    </label>
+    <div class="send-row">
+      <button type="button" id="send-wa" class="btn-wa">Enviar por WhatsApp</button>
+      <button type="button" id="send-mail" class="btn-mail">Enviar por Correo</button>
+    </div>
+    <p id="order-status" class="order-status"></p>
+  </form>
+</aside>
+
+<footer>
+  <p><strong>Empresa demo</strong> &mdash; Querétaro / Celaya, México</p>
+  <p class="legal">Precios sujetos a cambio sin previo aviso. Pedido sujeto a confirmación.</p>
+  <div class="demo-banner-bottom">
+    <strong>AVISO:</strong> Todos los productos, precios, existencias y datos de contacto
+    mostrados son <em>ficticios</em>. Este portal es una demostración técnica del esqueleto
+    del sistema. No representa precios ni inventario reales de ninguna empresa.
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
